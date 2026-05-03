@@ -1,0 +1,22 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --font: 'Inter', system-ui, sans-serif;
+  --bg: #f8f8f7; --surface: #ffffff;
+  --border: #e5e4e0; --border-strong: #d1d0cc;
+  --text: #1a1a18; --text-2: #6b6b67; --text-3: #a0a09b;
+  --accent: #1a1a18; --accent-text: #ffffff;
+  --info-bg: #eef4ff; --info-text: #1a4faf;
+  --success-bg: #edfbf4; --success-text: #166534;
+  --warning-bg: #fef9ec; --warning-text: #92400e;
+  --danger-bg: #fff0f0; --danger-text: #b91c1c;
+  --radius: 8px; --radius-lg: 12px;
+}
+body { font-family: var(--font); font-size: 14px; color: var(--text); background: var(--bg); line-height: 1.5; -webkit-font-smoothing: antialiased; }
+input, textarea, select, button { font-family: var(--font); font-size: 14px; }
+button { cursor: pointer; }
+input[type="text"], input[type="number"], input[type="password"], input[type="email"], input[type="url"], textarea, select {
+  border: 0.5px solid var(--border); background: var(--surface); color: var(--text);
+  padding: 7px 10px; border-radius: var(--radius); outline: none; width: 100%; transition: border-color 0.15s;
+}
+input:focus, textarea:focus, select:focus { border-color: var(--border-strong); }
+textarea { resize: vertical; }
